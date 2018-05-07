@@ -7,10 +7,11 @@
     <title>Book-meal</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="container">
 <nav class="navbar">
+    <p>Meal Booking App</p>
 
-<span class="open-slide">
+<!--<span class="open-slide">
     <a href="#" onclick="openSlideMenu()">
         <svg width = "30" height = "30">
             <path d = "M0,5 30,5" stroke ="#fff" stroke-width = "5"/>
@@ -25,52 +26,87 @@
 
 <ul class="navbar-nav">
     <li><a href="#">Home</a></li>
-    <li><a href="#">Menu</a></li>
+    <li><a href="menu.html">Menu</a></li>
     <li><a href="#">order</a></li>
     <li><a href="#">Meals</a></li>
-    <li><a href="#">Manage Meals</a></li>
-    <li><a href="#">Sign in</a></li>
+    <li><a href="#">Manage Meals</a>
+    
+    <ul class="dropdown">
+        <li><a href="#">add meal</a></li>
+        <li><a href="#">edit meal</a></li>
+        <li><a href="#">delete meal</a></li>
+    </ul>
+
+    </li>
+    <a href="register.html">signup</a>
+    <li><a href="signin.html">Sign in</a></li>
     <li><a href="#">Sign out</a></li>
    
 </ul>
 
+
 <div  id = "side-menu"class="side-nav">
     <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
     <a href="#">Home</a>
-    <a href="#">Menu</a>
+    <a href="menu.html">Menu</a>
     <a href="#">order</a>
     <a href="#">Meals</a>
-    <a href="#">Manage Meals</a>
+    <a href="#">Manage Meals
+        <ul class="dropdown">
+            <li><a href="#">add meal</a></li>
+            <li><a href="#">edit meal</a></li>
+            <li><a href="#">delete meal</a></li>
+        </ul>
+    </a>
     <div class="nav-links">
-        <a href="#">Sign in</a>
-        <a href="#">Sign out</a>
+        <a href="register.html">signup</a>
+        <a href="signin.html">Sign in</a>
+        <a href="register.html">Sign out</a>
     </div>
 </div>
+-->
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Manage meals</a>
+        <ul>
+            <li><a href="add_meal.html">Add meal</a></li>
+            <li><a href="edit_meal.html">Edit meal</a></li>
+            <li><a href="#">Delete meal</a></li>
+        </ul>
+    </li>
+    <li><a href="#">orders</a>
+        <ul>
+            <li><a href="#">customer order</a></li>
+            <li><a href="#">order details</a></li>
+            <li><a href="#">order history</a></li>
+        </ul>
+    </li>
+    <li><a href="#">sign up</a></li>
+    <li><a href="#">sign in</a></li>
+</ul>
 
 </nav>
 
 <div id="main">
-    <h1>Book a Meal</h1>
-
+    <h1 class="headingClass">Book a Meal</h1><br/>
   <div class="page-body">
      <p id="para">
-        An app where a user can create an account, login and book a meal by selecting from the menu available for a given day.
-        If a user is logged in, he/she has the ability to see the day's menu and  make an order based on the menu for the day. He/she is able to 
-        pay for the meal, see his/her order history and get notifications when the menu for the day has been changed.
-
+        Order delicious food at a very low cost.
     </p>
     <div class="readMore">
-       <button class="button" id="readMore"><a href="#">Read More</a></button>
+       <button class="button" id="readMore"><a href="#">Order now</a></button>
     </div>
   </div>
 
-  <div  id="btn-signin">
-     <button class = "button"id="register"><a href="#">Register</a></button>
-     <button class="button" id="login"><a href="#">login</a></button>
-  </div>
+  <!--<div  id="btn-signin">
+     <button class = "button"id="register"><a href="register.html">Register</a></button>
+     <button class="button" id="login"><a href="signin.html">login</a></button>
+  </div>-->
 </div>
 
-<script>
+<!--<script>
     function openSlideMenu(){
         document.getElementById('side-menu').style.width = '250px';
         document.getElementById('main').style.marginLeft = '250px';
@@ -81,7 +117,7 @@
         document.getElementById('main').style.marginLeft = '0';
     }
 
-</script>
+</script>-->
 
 </body>
 </html>
