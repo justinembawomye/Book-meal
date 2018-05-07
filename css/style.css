@@ -1,5 +1,12 @@
-body{
-    background-image: url('../css/img/food.jpg');
+
+*{
+    margin: 0;
+    padding-top: 0;
+}
+
+.container{
+    background-image: url('../css/img/meal-a.jpg');
+    max-height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     font-family:"Arial", Serif;
@@ -16,11 +23,14 @@ body{
 }
 
 
-.navbar{
-background-color: #6b070f;
-/*background-color: #3b5998;*/
+
+/* previous navbar styles */
+/*.navbar{
+background-color: #4ba90624;
 overflow: hidden;
 height: 63px;
+height: 60px;
+position: relative;
 }
 
 
@@ -33,11 +43,14 @@ height: 63px;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    position: relative;
 }
 
-.navbar ul{
+.navbar ul li{
     margin: 8px 0 0 0;
     list-style: none;
+    position: relative;
+
 }
 
 .navbar a:hover{
@@ -57,10 +70,12 @@ height: 63px;
     overflow-x: hidden;
     padding-top: 60px;
     transition:0.5s;
+   
 }
 
 .side-nav a{
     padding: 10px 10px 10px 30px;
+    width: 150px;
     text-decoration: none;
     font-size: 22px;
     color:#ccc;
@@ -70,6 +85,7 @@ height: 63px;
 
 .side-nav a:hover{
     color: #fff;
+    background-color: #111;
 }
 .side-nav .btn-close{
     position: absolute;
@@ -79,47 +95,106 @@ height: 63px;
     margin-left:50px;
 }
 
+.dropdown li{
+background-color: #fff;
+color: #000;
+    display: block;
+    position: absolute;
+    width: 150px;
+}
 
+*/
+
+nav{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color:#df4407;
+}
+
+nav p{
+    font-family: Arial;
+    color:#fff;
+    font-size: 24px;
+    line-height: 55px;
+    float:left;
+     padding: 0 20px;
+}
+
+nav ul{
+    float: left;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    font-family: Arial;
+    color:#fbfbfb;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+
+nav ul li ul li {
+   width: 150px;
+   border-radius: 4px;
+ }
+
+nav ul li ul li a{
+   padding: 8px 14px;
+}
+
+nav ul li ul li a:hover{
+    color: #222;
+    background-color: #f3f3f3;
+ }
 
 #main{
+    /* margin-top: 40px;
+    margin-left: 100px; */
     transition: margin-left 0.5s;
     padding: 20px;
     overflow: hidden;
-    width: 100%;
+    width: auto;
+    margin: 70px 70px auto;
+    background-color: #df4407a6;
 
 }
 
-/*@media(max-width:568px){
-    .navbar-nav{display:none}
-}
-*/
 
-@media only screen and (max-width: 600px) {
-    body{background-size:800px}
-    body{width:100%}
-
-}
-
-/* if you don't want your slide to show until the height is reduced to 568px*/
-@media(min-width:568px){
-    /*.open-slide{display:none}*/
-}
 
 
 h1{
-    color: rgb(107, 19, 3);
+    color: #f7c01b;
     text-align: center;
     font-weight: bold;
     font-size: 60px;
     /*background-color: #e6b93324;*/
-    width: 80%;
+    width: 100%;
 }
 .readMore{
     margin-left: 450px;
 
 }
 #readMore{
-    background-color: #6b070fa1;
+    background-color: #4ba906c4;
     color:#fff;
     border-radius:10px;
     padding: 16px;
@@ -130,7 +205,7 @@ h1{
 
 #readMore a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(236, 235, 128);
 }
 
 #btn-signin{
@@ -154,7 +229,7 @@ h1{
 
 
 #login{
-    background-color:#dc52318f;
+    background-color:#8a630980;
     color:#fff;
     border-radius:10px;
     padding: 8px;
@@ -166,11 +241,59 @@ h1{
     color: #fff;
 }
 #para{
-    width: 70%;
-    margin-left: 120px;
-    color: #ffff0094;
+    width: 100%;
+    text-align: center;
+    color: #fbfbfbba;
     line-height: 2em;
     font-size: 20px;
-    background-color: #8614008f;
-    padding: 20px;
+    /*background-color: #8614008f;*/
+    
+}
+
+.add-meal{
+    background: #f3f3f3;
+}
+
+div .addmeal-form{
+    margin-top:80px;
+    text-align: center;
+}
+input[type=text] {
+    width: 60%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    border-radius: 10px;
+    padding: 10px 5px;
+    background-color: #df4407;
+    color: #fff;
+}
+
+label{
+margin-left:200px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size:15px;
+}
+
+#addmeal{
+    margin-left:232px;  
+}
+
+#editmeal{
+    margin-left:232px;  
+}
+
+@media only screen and (max-width: 600px) {
+    #main{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin: 20px 20px auto;
+    }
+   
+   
 }
