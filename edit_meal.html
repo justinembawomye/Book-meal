@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Meal Booking App</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body class="edit-meal">
+
+
+        <nav class="navbar">
+                <p>Meal Booking App</p>
+            
+            <!--<span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width = "30" height = "30">
+                        <path d = "M0,5 30,5" stroke ="#fff" stroke-width = "5"/>
+                        <path d = "M0,14 30,14" stroke = "#fff" stroke-width = "5"/>
+                        <path d = "M0,23 30,23" stroke = "#fff" stroke-width = "5 "/>
+            
+                    </svg>
+            
+                </a>
+            </span>
+            
+            
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">order</a></li>
+                <li><a href="#">Meals</a></li>
+                <li><a href="#">Manage Meals</a>
+                
+                <ul class="dropdown">
+                    <li><a href="#">add meal</a></li>
+                    <li><a href="#">edit meal</a></li>
+                    <li><a href="#">delete meal</a></li>
+                </ul>
+            
+                </li>
+                <a href="register.html">signup</a>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="#">Sign out</a></li>
+               
+            </ul>
+            
+            
+            <div  id = "side-menu"class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="#">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="#">order</a>
+                <a href="#">Meals</a>
+                <a href="#">Manage Meals
+                    <ul class="dropdown">
+                        <li><a href="#">add meal</a></li>
+                        <li><a href="#">edit meal</a></li>
+                        <li><a href="#">delete meal</a></li>
+                    </ul>
+                </a>
+                <div class="nav-links">
+                    <a href="register.html">signup</a>
+                    <a href="signin.html">Sign in</a>
+                    <a href="register.html">Sign out</a>
+                </div>
+            </div>
+            -->
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Manage meals</a>
+                    <ul>
+                        <li><a href="add_meal.html">Add meal</a></li>
+                        <li><a href="edit_meal.html">Edit meal</a></li>
+                        <li><a href="#">Delete meal</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">orders</a>
+                    <ul>
+                        <li><a href="#">customer order</a></li>
+                        <li><a href="#">order details</a></li>
+                        <li><a href="#">order history</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">sign up</a></li>
+                <li><a href="#">sign in</a></li>
+            </ul>
+            
+            </nav>
+            
+
+
+<div class="editmeal-form">
+        <h1 class="heading">Edit meal</h1>
+
+        <form>
+            <!--<input id="csrf_token" name="csrf_token" type="hidden" value="IjM0ZmUyNzdlNzVjYzE4YTUxNmFlMjdmMGFkZTM0NWE0NTc3ZWJmMWEi.DcC7LA.XBimyYI3nzC6Q8aG2tikuVVvcvo">-->
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" value="">
+            </div>
+
+
+            <br>
+
+            <div class="form-group">
+                                
+                <label for="category">Select category</label>
+                <select id="category" name="category"><option value="main dish">main dish</option><option value="Dessert">Dessert</option><option value="Beverages">Beverages</option><option value="salads">Fresh salads</option><option value="coffee">Coffee</option><option value="Burbeque">Burbeque</option></select>
+
+            </div>
+            
+            <br>
+
+            <div class="form-group">
+                    
+                <label for="price">Price</label>
+                <input id="price" name="price" type="text" value="">
+            
+                </div>
+
+            <br>
+
+               <p id="editmeal"><input type="submit" value="submit"></p>
+        
+        </form>    
+    </div>     
+
+</body>
+</html>
