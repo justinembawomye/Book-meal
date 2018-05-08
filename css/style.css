@@ -189,6 +189,11 @@ h1{
     /*background-color: #e6b93324;*/
     width: 100%;
 }
+
+.heading-2{
+   margin-left: 10px;
+}
+
 .readMore{
     margin-left: 450px;
 
@@ -213,7 +218,8 @@ h1{
 }
 
 
-
+/*home page button styles*/
+/*
 #register{
     background-color:#df4407bd;
     color:#fff;
@@ -240,6 +246,9 @@ h1{
     text-decoration: none;
     color: #fff;
 }
+*/
+
+
 #para{
     width: 100%;
     text-align: center;
@@ -250,15 +259,15 @@ h1{
     
 }
 
-.add-meal{
-    background: #f3f3f3;
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 
-div .addmeal-form{
-    margin-top:80px;
-    text-align: center;
-}
-input[type=text] {
+input[type=password] {
     width: 60%;
     padding: 12px 10px;
     margin: 8px 0;
@@ -271,22 +280,89 @@ input[type=submit]{
     background-color: #df4407;
     color: #fff;
 }
-
+/* Manage meals styles */
 label{
-margin-left:200px;
+display: block;
+/*margin-left:140px;*/
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
 font-size:15px;
 }
 
+/* Add meal styles */
+.add-meal{
+    background: #f3f3f3;
+}
+
+.addmeal-form{
+    margin:50px auto;
+    padding: 2%; 
+}
 #addmeal{
     margin-left:232px;  
 }
 
+
+/* Edit meal styles */
+.edit-meal{
+    background: #f3f3f3;
+}
+
+.editmeal-form{
+    margin-left:50px;
+    padding: 1%; 
+}
 #editmeal{
     margin-left:232px;  
 }
 
+
+
+/* login page styles */
+.login-page{
+    width: 460px;
+    padding: 3%;
+    margin: 50px auto;
+    background-image: url('../css/img/login-bg.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+
+#btn-login{
+    margin-left:80px; 
+}
+
+.message{
+    text-align: center;
+    margin: 5px 10px;
+    padding: 10px;
+    background: rgb(238, 96, 40);
+}
+
+.message span{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* Register page styles */
+
+.register-form{
+    width: 460px;
+    padding: 3%;
+    margin:  50px auto;
+    background-image: url('../css/img/login-bg.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+.btn-register{
+    margin-left:10px; 
+}
+
+
+/* media queries */
 @media only screen and (max-width: 600px) {
     #main{
         display: flex;
